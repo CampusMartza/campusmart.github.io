@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusMart - Campus Marketplace</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        nav {
+            display: flex;
+            gap: 30px;
+            margin-top: 15px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s;
+        }
+        
+        nav a:hover {
+            opacity: 0.8;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        
+        .hero p {
+            font-size: 1.3em;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 15px 40px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .features {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+        
+        .features h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 50px;
+            color: #333;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }
+        
+        .feature-card h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+        
+        .feature-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        .categories {
+            padding: 80px 0;
+        }
+        
+        .categories h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 50px;
+            color: #333;
+        }
+        
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+        
+        .category-item {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        
+        .category-item:hover {
+            transform: scale(1.05);
+        }
+        
+        .category-item h3 {
+            font-size: 1.3em;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 80px;
+        }
+        
+        footer p {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🛍️ CampusMart</h1>
+            <p>Your Campus Marketplace for Textbooks, Electronics & More</p>
+            <nav>
+                <a href="#features">Features</a>
+                <a href="#categories">Categories</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <div class="container">
+            <h2>Buy & Sell on Campus</h2>
+            <p>Connect with your campus community to buy and sell textbooks, electronics, and more at great prices.</p>
+            <a href="#" class="cta-button">Get Started</a>
+        </div>
+    </section>
+    
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Why Choose CampusMart?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>📚 Textbooks</h3>
+                    <p>Find affordable textbooks from other students. Save money on expensive course materials and earn by selling your used books.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>💻 Electronics</h3>
+                    <p>Browse laptops, tablets, phones, and accessories from trusted campus sellers. Great deals on tech you need for class.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🤝 Campus Community</h3>
+                    <p>Buy and sell directly with fellow students. No middleman, just fair prices and convenient campus meetups.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>✅ Trusted & Secure</h3>
+                    <p>Verified student profiles and secure transactions. Shop with confidence knowing you're dealing with your campus community.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>⚡ Quick & Easy</h3>
+                    <p>List items in minutes. Simple interface makes buying and selling effortless. Get what you need fast.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>💰 Better Prices</h3>
+                    <p>Cut out retail markups. Get better deals on textbooks and electronics by buying directly from students.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="categories" class="categories">
+        <div class="container">
+            <h2>Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-item">
+                    <h3>📖 Textbooks</h3>
+                </div>
+                <div class="category-item">
+                    <h3>💻 Laptops</h3>
+                </div>
+                <div class="category-item">
+                    <h3>📱 Phones</h3>
+                </div>
+                <div class="category-item">
+                    <h3>🎧 Accessories</h3>
+                </div>
+                <div class="category-item">
+                    <h3>📚 Notes & Guides</h3>
+                </div>
+                <div class="category-item">
+                    <h3>🎮 Gaming</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2024 CampusMart. All rights reserved.</p>
+            <p>Connect with fellow students. Buy smart. Sell easy.</p>
+            <p><strong>Contact:</strong> support@campusmart.local</p>
+        </div>
+    </footer>
+</body>
+</html>
